@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>WhatsApp UI Design</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Stylesheets.css">
+    <script src = JSFunc.js></script>
+    
+</head>
+<body>
+    <div class="container-fluid full-page bg-success">
+        <div class="row-sm-6">
+        <div class="container second-container ">
+            <div class="chat-list">
+                <div class="chat-header">
+                    <div class="d-flex align-items-center">
+                        <img src="user.png" class="profile-pic" alt="Profile Picture">
+                        <span class="chat-title ms-3">Chats</span>
+                    </div>
+                    <div class="chat-icons">
+                        <img src="search.png" class="search" alt="search symbol">
+                        <img src="more.png" class="dots" alt="dots">
+                    </div>
+                </div>
+                <div class="search-box">
+                    <input type="text" class="form-control" placeholder="Search or Start a new Chat">
+                </div>
+                <!--  chat items -->
+                <ul class="list-group ">
+                    <li class="list-group-item">
+                        <div class="d-flex align-items-center">
+                            <img src="man.png" class="profile-pic" alt="Robert Evans">
+                            <span class="ms-3">Robert Evans</span>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="d-flex align-items-center">
+                            <img src="profile.png" class="profile-pic" alt="Mark Smith">
+                            <span class="ms-3">Mark Smith</span>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="d-flex align-items-center">
+                            <img src="profile1.png" class="profile-pic" alt="Chris Henry">
+                            <span class="ms-3">Chris Henry</span>
+                        </div>  
+                    </li>
+                    <li class="list-group-item">
+                        <div class="d-flex align-items-center">
+                            <img src="man.png" class="profile-pic" alt="Matthew Whitman">
+                            <span class="ms-3">Matthew Whitman</span>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="d-flex align-items-center">
+                            <img src="profile1.png" class="profile-pic" alt="Joe Gomez">
+                            <span class="ms-3">Joe Gomez</span>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="d-flex align-items-center">
+                            <img src="profile.png" class="profile-pic" alt="Lucas Johnson">
+                            <span class="ms-3">Lucas Johnson</span>
+                        </div>
+                    </li>
+                </ul>
+               
+            </div>
+
+            <!-- right side-->
+            <div class="chat-window">
+                <div class="custom-chat-header">
+                    <div class="custom-left-section d-flex align-items-center">
+                        <img src="man.png" class="profile-pic" alt="Profile Picture">
+                        <span class="chat-title ms-2">Robert Evans <br><small class="status">online</small> </br></span>
+                       
+                    </div>
+                    <div class="custom-right-section d-flex align-items-center">
+                        <img src="video.png" class="search" alt="camera">
+                        <img src="phone.png" class="dots" alt="phone">
+                    </div>   
+                </div>
+                <div class="chat-messages" id="chatMessages"></div>
+                <div class="message-input-box">
+                        <div class = "message-container">
+                            <img src = "smile.png" class="input-icon left-icon" >
+                            <input type="text" id="messageInput" class="form-control message-input" placeholder="Type a message...">
+                            <img src = "send.png" class="input-icon right-icon" id="sendButton">
+                        </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+    </div>
+</body>
+</html>
